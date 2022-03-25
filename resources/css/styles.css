@@ -1,0 +1,319 @@
+/*
+HOMEPAGE
+*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+footer{
+    position: relative;
+    background-color: #fdd6b0;
+    color: #7b4d0f;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.color-1{
+    color: #005172;
+}
+
+.color-2-1{
+    color: #f46b4d;
+}
+.color-2-2{
+    color: #7b4d0f;
+}
+
+/*
+BUTTON
+*/
+.btn-nav-content:hover{
+    transform: scale(1.05);
+}
+.btn-color-1{
+    background-color: #005172 !important;
+}
+.btn-color-1:hover{
+    background-color: #00445d !important;
+}
+
+.btn-color-2{
+    background-color: #daf4e3;
+}
+.btn-color-2:hover{
+    background-color: #ebfbe9;
+}
+
+.btn-color-2-1{
+    background-color: #41bacc !important;
+}
+.btn-color-2-1:hover{
+    background-color: #2e838d !important;
+}
+
+/*
+BACKGROUND
+*/
+.wallpaper-bg{
+
+    /* Full height */
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bg-green{
+    background: #57CF71 !important;
+}
+
+.bg-sand{
+    background: #ffeed3 !important;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.login-shadow{
+    box-shadow: -1px 9px 22px -9px rgba(0,0,0,0.83);
+    -webkit-box-shadow: -1px 9px 22px -9px rgba(0,0,0,0.83);
+    -moz-box-shadow: -1px 9px 22px -9px rgba(0,0,0,0.83);
+}
+
+/*
+NAVBAR OVERLAY
+*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 100%;
+    top: 0;
+    background: rgb(0,21,32);
+    background: linear-gradient(0deg, rgba(0,21,32,1) 0%, rgba(0,32,48,1) 100%);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*
+TIMELINE CARD RIPPLES
+*/
+
+
+.card--shockwave.is-active {
+    -webkit-animation: shockwaveJump 1s ease-out infinite;
+    animation: shockwaveJump 1s ease-out infinite;
+}
+.btn--shockwave.is-active:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    -webkit-animation: shockwave 1s 0.50s ease-out infinite;
+    animation: shockwave 1s 0.5s ease-out infinite;
+}
+.card--shockwave.is-active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    -webkit-animation: shockwave 1s 0.5s ease-out infinite;
+    animation: shockwave 1s 0.5s ease-out infinite;
+}
+
+@-webkit-keyframes shockwaveJump {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    40% {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+    50% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    55% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    60% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes shockwaveJump {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    40% {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+    50% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    55% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    60% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes shockwave {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+    95% {
+        box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+    }
+    100% {
+        -webkit-transform: scale(2.25);
+        transform: scale(2.25);
+    }
+}
+@keyframes shockwave {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+    95% {
+        box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;
+    }
+    100% {
+        -webkit-transform: scale(2.25);
+        transform: scale(2.25);
+    }
+}
+.btn--jump.is-active {
+    -webkit-animation: 0.4s jump ease infinite alternate;
+    animation: 0.4s jump ease infinite alternate;
+}
+
+@-webkit-keyframes jump {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes jump {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/*
+SMOOTHSCROLLING
+*/
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    display: none;
+    z-index: 100;
+    box-shadow : 0 4px 8px rgb(0 0 0 / 32%);
+}
+
+
+

@@ -1,0 +1,44 @@
+
+.navbar{
+    -webkit-box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+    box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+}
+.shadow{
+    -webkit-box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+    box-shadow: 0px 1px 14px -3px rgba(0,0,0,0.43);
+}
+
+.main-button-c{
+    background-color: #200257;
+    padding: 6px 12px 6px 12px;
+}
+.main-button-c:hover{
+    background-color: #110223;
+}
+
+.p-active{
+    color: #38029c !important;
+}
+.profile-menu-button:hover{
+    color: #38029c !important;
+    transition: 0.2s;
+}
+
+.profile-responsive-top{
+    border-right: 1px solid black;
+}
+@media screen and (max-width: 992px) {
+    .profile-responsive-top{
+        border: none !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .profile-responsive-top{
+
+    }
+}

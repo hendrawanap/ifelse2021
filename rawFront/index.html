@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>IF ELSE 2021</title>
+        <!-- Favicon-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/bstyles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-green" >
+        <div class="container" data-aos="fade-down" data-aos-duration="1000">
+            <h3 class="text-white">IF ELSE 2021 </h3>
+            <p class="ml-4 mr-0 text-white fw-lighter mb-0" style="cursor: pointer">Berita</p>
+            <p class="ml-3 mr-auto text-white fw-lighter mb-0" style="cursor: pointer">FAQ</p>
+            <button onclick="openNav()" class="btn fw-bolder mr-0 p-0" id="sidebarToggle"><span class="fa fa-bars fa-2x mr-0 pr-0" style="color: white"></span></button>
+        </div>
+    </nav>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" style="z-index: 6" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" style="z-index: 5">
+            <img src="assets/logo.png" style="width: 200px; height: 200px" class=" mx-auto">
+            <div class="w-100">
+                <table class="mx-auto">
+                    <tbody>
+                    <tr>
+                        <td><a class="text-white" href="#"><p class="mb-0">Profil</p></a></td>
+                        <td><span class="fa fa-user fa-2x text-white ml-1"></span></td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-white" href="#"><p class="mb-0">Berita</p></a></td>
+                        <td><span class="fa fa-newspaper fa-2x text-white ml-1"></span></td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-white" href="#"><p class="mb-0">Penugasan</p></a></td>
+                        <td><span class="fa fa-tasks fa-2x text-white ml-1"></span></td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-white" href="#"><p class="mb-0">Quiz</p></a></td>
+                        <td><span class="fa fa-question fa-2x text-white ml-1"></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <img class="wallpaper-bg" src="assets/footer-low.png" style="position: absolute; bottom: 0; z-index: 3">
+
+    </div>
+
+    <!-- Page content-->
+    <div class="container-fluid pb-5">
+        <div class="container pt-4 pb-5 mb-5">
+            <h2 class="mb-3" data-aos="fade-right" data-aos-duration="1000">Selamat Datang, {{nama}}</h2>
+
+            <div class="row">
+                <div class="col-lg-8 mb-2">
+                    <div class="card w-100" style="height: 400px">
+
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="overflow-auto" style="height: 400px">
+                        <div class="card w-75 mb-2 mx-auto" style="height: 150px"></div>
+                        <div class="card w-75 mb-2 mx-auto" style="height: 150px"></div>
+                        <div class="card w-75 mb-2 mx-auto" style="height: 150px"></div>
+                        <div class="card w-75 mb-2 mx-auto" style="height: 150px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 pt-5 pb-5" style="background-image: url('assets/login-bg.png'); background-position: center; position: relative; background-size: cover">
+        <div class="container pt-5 pb-5">
+            <div class="col-lg-10 mx-auto">
+                <h2 class="text-center" data-aos="fade-right" data-aos-duration="1000">TENTANG IF ELSE</h2>
+                <p class="text-center mb-0" data-aos="fade-left" data-aos-duration="1000">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            </div>
+       </div>
+        <img class="wallpaper-bg" src="assets/about-bg-birds.png" style="z-index: 3; position: absolute; top: -80px" data-aos="fade-up">
+        <img class="wallpaper-bg" src="assets/about-bg.png" style="z-index: 3; position: absolute; bottom: 0" data-aos="zoom-out-down">
+    </div>
+
+    <div class="w-100 bg-silver pt-5" style="background-color: #d6efec; margin-top: 0">
+        <div class="container">
+            <h2 class="text-center" data-aos="zoom-out-down"  data-aos-duration="500">FILOSOFI LOGO</h2>
+            <div class="pt-3">
+                <div class="card mx-auto mb-5" style="height: 200px; width: 200px; background-color: transparent; border-radius: 50%; border: none" data-aos="zoom-out-up"  data-aos-duration="1000">
+                    <img src="assets/logo.png" style="background: no-repeat">
+                </div>
+
+                <div id="carouselLogo" class="carousel slide" data-ride="carousel" data-aos="zoom-out-down" data-aos-duration="500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100" style="height: 300px; background: transparent" alt="..."></div>
+                            <div class="carousel-caption d-md-block" style="color: black">
+                                <img src="assets/logo-titik.png" class="card mx-auto mb-3 mt-3" style="width: 100px; height: 100px; background-repeat: no-repeat;  background: transparent; border: none">
+                                <h5>21 Titik Terhubung</h5>
+                                <p>Melambangkan mahasiswa teknik informatika angkatan 2021 yang saling terhubung menciptakan sebuah kesatuan.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" style="height: 300px; background: transparent" alt="..."></div>
+                            <div class="carousel-caption d-md-block" style="color: black">
+                                <img src="assets/logo-kompas.png" class="card mx-auto mb-3 mt-3" style="width: 100px; height: 100px; background-repeat: no-repeat;  background: transparent; border: none">
+                                <h5>Kompas</h5>
+                                <p>Melambangkan banyaknya arah tujuan atau prospek yang tersedia bagi mahasiswa teknik informatika.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" style="height: 300px; background: transparent" alt="..."></div>
+                            <div class="carousel-caption d-md-block" style="color: black">
+                                <img src="assets/logo-processor.png" class="card mx-auto mb-3 mt-3" style="width: 100px; height: 100px; background-repeat: no-repeat;  background: transparent; border: none">
+                                <h5>Processor</h5>
+                                <p>Melambangkan mahasiswa teknik informatika yang dapat berpikir kritis dalam menyelesaikan masalah dan mengambil keputusan layaknya prosessor.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselLogo" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left fa-3x" style="color: black" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselLogo" role="button" data-slide="next" style="text-underline: none">
+                        <span class="fa fa-angle-right fa-3x" style="color: black !important; border: none" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 bg-silver pt-5 pb-5" style="background-color: #005171">
+        <div class="container">
+            <h2 class="text-center text-white mb-4" data-aos="fade-right" data-aos-duration="1000">PENUGASAN</h2>
+            <h1 class="text-center text-white" data-aos="fade-left" data-aos-duration="1000">COMING SOON</h1>
+        </div>
+    </div>
+
+    <div class="w-100 bg-silver pt-5 pb-4" style="background-image: url('assets/login-bg.png'); background-position: center; position: relative; background-size: cover">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">RANGKAIAN IF ELSE 2021</h2>
+            <div class="pt-3">
+
+            </div>
+        </div>
+        <div class="pt-3 mx-auto pb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="card is-active p-5 m-2" style="width: 18rem; border-radius: 2.5rem" data-aos="flip-up"  data-aos-duration="1000">
+                    <img class="rounded-circle mx-auto" style="background-color: #0a53be; height: 10rem; width: 10rem">
+                    <h5 class="text-center mt-3">RANGKAIAN 1</h5>
+                    <h5 class="text-white text-center">=</h5>
+                </div>
+                <div class="card p-5 m-2" style="width: 18rem; border-radius: 2.5rem" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+                    <img class="card--shockwave is-active rounded-circle mx-auto" style="background-color: #0a53be; height: 10rem; width: 10rem">
+                    <h5 class="text-center mt-3">RANGKAIAN 2</h5>
+                    <h5 class="text-white text-center">=</h5>
+                </div>
+                <div class="card p-5 m-2" style="width: 18rem; border-radius: 2.5rem" data-aos="flip-up" data-aos-delay="600" data-aos-duration="1000">
+                    <img class="rounded-circle mx-auto" style="background-color: black; height: 10rem; width: 10rem">
+                    <h5 class="text-center mt-3">RANGKAIAN 3</h5>
+                    <h5 class="text-black-50 text-center">Coming Soon</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-100 pt-5 pb-3" style="position: relative">
+        <div class="d-block">
+            <h4 class="text-center">CONNECT</h4>
+            <div class="row justify-content-center">
+                <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+                <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+                <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+            </div>
+            <h5 class="text-center" style="font-weight: normal" >Part of HMIF FILKOM UB</h5>
+            <img class="wallpaper-bg" src="assets/footer-leaves.png" style="z-index: 3; position: absolute; bottom: 0">
+        </div>
+    </footer>
+
+    <!-- SMOOTHSCROLLING-->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap core JS-->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/navbaroverlay.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    </body>
+</html>

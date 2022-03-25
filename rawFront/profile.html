@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Profile Page</title>
+        <!-- Favicon-->
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/bstyles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">IF ELSE 2021</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Berita</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Penugasan</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Quiz</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary fw-bolder" id="sidebarToggle">MENU</button>
+                        <a class="nav-link" href="#" style="color: darkred">Logout</a>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid pb-4" style="background-image: url('assets/login-bg.png'); background-size: cover; background-position: center">
+                    <div class="container pt-4 col-lg-7">
+                        <div class="row mb-2">
+                           <div class="col-lg-3 mb-2">
+                               <div class="card">
+                                   <div class="card-body text-center">
+                                       <div class="card mx-auto rounded-circle mb-3 mt-3" style="width: 100px; height: 100px"></div>
+                                       <h3>Idan</h3>
+                                       <p class="mb-0 text-black-50">195150207111022</p>
+                                       <p class="text-black-50">Nama kelompok</p>
+                                       <btn class="btn btn-color-1 mb-2 text-white">Ganti Foto Profil</btn>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-lg">
+                               <div class="card">
+                                   <div class="card-body">
+                                       <div class="row mb-2">
+                                           <div class="col-sm-3">Nama</div>
+                                           <div class="col-sm-9 text-secondary">Zaidan Tifftazany Boediyono</div>
+                                       </div>
+                                       <div class="row mb-2">
+                                           <div class="col-sm-3">NIM</div>
+                                           <div class="col-sm-9 text-secondary">195150207111022</div>
+                                       </div>
+                                       <div class="row mb-2">
+                                           <div class="col-sm-3">Alamat</div>
+                                           <div class="col-sm-9 text-secondary">indonesia</div>
+                                       </div>
+                                       <div class="row mb-2">
+                                           <div class="col-sm-3">Id Line</div>
+                                           <div class="col-sm-9 text-secondary">idantb</div>
+                                       </div>
+                                       <div class="row mb-2">
+                                           <div class="col-sm-3">Nomor Whatsapp</div>
+                                           <div class="col-sm-9 text-secondary">08123456789</div>
+                                       </div>
+                                       <div>
+                                           <a class="btn btn-color-1 pl-5 pr-5 mt-2 text-white" data-toggle="modal" data-target="#editModal">Edit</a>
+                                           <a class="btn btn-color-1 pl-5 pr-5 mt-2 text-white" data-toggle="modal" data-target="#">Pendataan</a>
+                                           <a class="btn btn-color-1 pl-5 pr-5 mt-2 text-white" data-toggle="modal" data-target="#">Perizinan</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <h4 class="text-center">Progress Penugasan Rangkaian 1</h4>
+                                <div class="progress">
+                                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a class="mt-3 btn btn-color-1 w-100 fw-bold text-white" data-toggle="modal" data-target="#progressModal1">Detail Penugasan</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <h4 class="text-center">Progress Penugasan Rangkaian 2</h4>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a class="mt-3 btn btn-color-1 w-100 fw-bold text-white" data-toggle="modal" data-target="#progressModal2">Detail Penugasan</a>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body ">
+                                <h4 class="text-center">Progress Penugasan Rangkaian 3</h4>
+                                <div class="progress">
+                                    <div class="progress-bar w-25" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <a class="mt-3 btn btn-color-1 w-100 fw-bold text-white" data-toggle="modal" data-target="#progressModal3">Detail Penugasan</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Ubah Id Line</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Isi Id Line Anda">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Ubah Nomor Whatsapp</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="08xxxxxxxx">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="perizinanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Perizinan</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Ubah Id Line</label>
+                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Isi Id Line Anda">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Ubah Nomor Whatsapp</label>
+                                        <input type="password" class="form-control" placeholder="08xxxxxxxx">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="progressModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Progress Penugasan Rangkaian 1</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row pl-1 pr-1 pt-2 justify-content-center">
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 2</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 3</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 2</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 3</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="progressModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Progress Penugasan Rangkaian 2</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row pl-1 pr-1 pt-2 justify-content-center">
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 2</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 3</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 2</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 3</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="progressModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Progress Penugasan Rangkaian 3</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row pl-1 pr-1 pt-2 justify-content-center">
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 2</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Penugasan 3</h5>
+                                            <span class="fa fa-times fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 1</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 2</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card m-2" style="width: 10rem;">
+                                        <div class="card-body pl-1 pr-1 text-center">
+                                            <h5 class="card-title">Quiz 3</h5>
+                                            <span class="fa fa-check fa-6x text-center mb-3"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Modal -->
+
+
+
+                <footer class="w-100 pt-3 pb-3" style="border-top: 1px solid black;">
+                    <div class="d-block">
+                        <h4 class="text-center">CONNECT</h4>
+                        <div class="row justify-content-center">
+                            <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+                            <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+                            <div class="card m-3 rounded-circle" style="width: 60px; height: 60px; background-color: #0a53be"></div>
+                        </div>
+                        <h5 class="text-center" style="font-weight: normal" >Part of HMIF FILKOM UB</h5>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
